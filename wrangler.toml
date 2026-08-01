@@ -1,3 +1,4 @@
+name = "cfr2-webdavn"   # 必须加上，和 Pages 项目名一致
 main = "src/index.ts"
 compatibility_date = "2024-02-01"
 
