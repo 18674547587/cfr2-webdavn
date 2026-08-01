@@ -1,12 +1,12 @@
-name = "cf-r2-webdav"
-main = "src/index.ts"
-compatibility_date = "2023-01-01"
-
-[vars]
-USERNAME = "$USERNAME"
-PASSWORD = "$PASSWORD"
-BUCKET_NAME = "$BUCKET_NAME"
+name = "cfr2-webdav"
+main = "src/index.js"
+compatibility_date = "2024-02-01"
 
 [[r2_buckets]]
 binding = "BUCKET"
-bucket_name = "$BUCKET_NAME"
+bucket_name = "webdav"   # 这里直接写你的桶名，不要用 $BUCKET_NAME
+
+[vars]
+USERNAME = "admin"
+PASSWORD = "123456"
+# 把 BUCKET_NAME 这一行删掉，不需要了
